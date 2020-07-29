@@ -1,0 +1,43 @@
+.app-quiz {
+	background: url('/images/gameplay-bg.jpg') no-repeat;
+	background-size: cover;
+}
+
+.score-board {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-gap: 1rem;
+}
+
+._question-board {
+	font-size: 3rem;
+	overflow: hidden;
+	position: relative;
+
+	&::before,
+	&::after {
+		content: '';
+		width: 30px;
+		height: 30px;
+		background-color: green;
+
+		position: absolute;
+		left: 50%;
+		transform: translateX( -50% ) rotate(45deg);
+	}
+
+	&::before {
+		top: -15px;
+	}
+
+	&::after {
+		bottom: -15px;
+	}
+}
+
+.option-btns {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 40px 40px;
+	grid-gap: 1rem;
+}

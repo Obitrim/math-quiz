@@ -1,0 +1,129 @@
+.flip-enter-active,
+.flip-leave-active {
+	animation: flip-in 0.3s forwards ease-in-out;
+}
+
+.flip-leave-active {
+	animation-direction: reverse;
+}
+
+@-webkit-keyframes flip-in {
+	0% {
+		transform: rotateY(90deg);
+	}
+
+	100% {
+		transform: rotateY(0deg);
+	}
+}
+@-moz-keyframes flip-in {
+	0% {
+		transform: rotateY(90deg);
+	}
+
+	100% {
+		transform: rotateY(0deg);
+	}
+}
+@-ms-keyframes flip-in {
+	0% {
+		transform: rotateY(90deg);
+	}
+
+	100% {
+		transform: rotateY(0deg);
+	}
+}
+@keyframes flip-in {
+	0% {
+		transform: rotateY(90deg);
+	}
+
+	100% {
+		transform: rotateY(0deg);
+	}
+}
+
+.squeeze-enter-active,
+.squeeze-leave-active {
+	animation: squeeze-in 0.3s forwards ease-in-out;
+}
+
+.squeeze-leave-active {
+	animation-direction: reverse;
+}
+
+@-webkit-keyframes squeeze-in {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+@-moz-keyframes squeeze-in {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+@-ms-keyframes squeeze-in {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+@keyframes squeeze-in {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+// spinning animations
+@-webkit-keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@-moz-keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@-ms-keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}

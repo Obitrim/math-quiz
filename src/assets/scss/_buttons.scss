@@ -1,0 +1,55 @@
+.base-btn {
+	border: none;
+	padding: .5rem 1.4rem;
+	background-color: $light;
+	transition: .3s;
+	
+	&:focus {
+		outline: none;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&.elevate {
+		box-shadow: 1px 1px 15px rgba(0, 0, 0, .2), -1px -1px 15px rgba(0, 0, 0, .2);
+	}
+
+	&:active.elevate{
+		box-shadow: inset 1px 1px 15px rgba($primary, .2), inset -1px -1px 5px rgba($primary, .2);
+	}
+}
+
+.option-btn {
+	position: relative;
+	border-radius: 2rem;
+	background: #fff;
+	border: 2px solid currentColor;
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+	transition: 0.2s;
+
+	&.wrong {
+		border-color: red;
+	}
+
+	&.correct {
+		border-color: green;
+	}
+
+	.option-label {
+		position: absolute;
+		left: 1rem;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&:hover {
+		background-color: rgba(0, 128, 0, 0.3);
+		color: $light;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
